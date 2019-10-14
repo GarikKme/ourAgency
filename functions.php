@@ -44,7 +44,7 @@ if ( ! function_exists( 'ouragency_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'ouragency' ),
+			'menu-header' => esc_html__( 'Header Navigation', 'ouragency' ),
 		) );
 
 		/*
@@ -122,9 +122,20 @@ add_action( 'widgets_init', 'ouragency_widgets_init' );
 function ouragency_scripts() {
 	wp_enqueue_style( 'ouragency-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'ouragency-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_style( 'ouragency-bootstrap-reboot.min.css', get_template_directory_uri().'/assets/css/bootstrap-reboot.min.css' );
+	wp_enqueue_style( 'ouragency-bootstrap.min.css', get_template_directory_uri().'/assets/css/bootstrap.min.css' );
+	wp_enqueue_style( 'ouragency-hover.css', get_template_directory_uri().'/assets/css/hover.css' );
+	wp_enqueue_style( 'ouragency-jquery.arcticmodal-0.3.css', get_template_directory_uri().'/assets/css/jquery.arcticmodal-0.3.css' );
+	wp_enqueue_style( 'ouragency-main.css', get_template_directory_uri().'/assets/css/main.css' );
+	wp_enqueue_style( 'ouragency-media.css', get_template_directory_uri().'/assets/css/media.css' );
 
-	wp_enqueue_script( 'ouragency-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	wp_enqueue_script('jquery-3.3.1.min.js', get_template_directory_uri() . '/assets/jquery-3.3.1.min.js');
+	wp_enqueue_script( 'ouragency-jquery.arcticmodal-0.3.min.js', get_template_directory_uri() . '/assets/js/jquery.arcticmodal-0.3.min.js', array(), '1.0', true );
+	wp_enqueue_script( 'ouragency-main.js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true );
+
+
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

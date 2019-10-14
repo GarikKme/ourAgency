@@ -1,11 +1,29 @@
-<?php
-/*
-Template Name: Главная
-Template Post Type: post, page, product
-*/
-
-get_header();?>
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>ONLINE</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- OG Tags -->
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="#" >
+	<meta property="og:site_name" content="">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- CSS Styles -->
+	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	<link rel="shortcut icon" href="img/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
 	<header class="header">
 		<div class="container">
 			<div class="header__wrap">
@@ -14,7 +32,7 @@ get_header();?>
 						<div class="navigation">
 							<div class="logo">
 								<a href="index.html">
-									<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/logo.png" alt="logo" class="logo__img">
+									<img src="img/logo.png" alt="logo" class="logo__img">
 								</a>
 								<a href="index.html"><p class="logo__text">Online</p></a>
 							</div>
@@ -23,15 +41,7 @@ get_header();?>
 							</div>
 							<div class="d-none d-lg-block menu-collapse">
 								<nav class="menu">
-									<?php
-											wp_nav_menu( array(
-												'theme_location' => 'menu-header',
-												'menu_id'        => 'header-menu',
-												'menu_class'        => 'menu__list',
-												'container'        => ''
-										) );
-									?>
-									<!-- <ul class="menu__list">
+									<ul class="menu__list">
 										<li class="menu__items">
 											<a href="#agents" class="go menu__item">О нас</a>
 										</li>
@@ -47,7 +57,7 @@ get_header();?>
 										<li class="menu__items">
 											<a href="#services" class="go menu__item">Услуги</a>
 										</li>
-									</ul> -->
+									</ul>
 								</nav>
 							</div>
 							<a href="#" class="btn d-none d-md-block navigation__btn">Оставить заявку</a>
@@ -61,7 +71,7 @@ get_header();?>
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/main-background.jpg" alt="agents" class="header__img">
+					<img src="img/main-background.jpg" alt="agents" class="header__img">
 				</div>
 			</div>
 		</div>	
@@ -108,7 +118,7 @@ get_header();?>
 					<div class="agents__wrap">
 						<div class="agent agent_one">
 							<div>
-								<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/face1.png" alt="face" class="agent__img">
+								<img src="img/face1.png" alt="face" class="agent__img">
 							</div>
 							<div class="agent__wrap">
 								<h4 class="agent__title">
@@ -121,7 +131,7 @@ get_header();?>
 						</div>
 						<div class="agent agent_two">
 							<div>
-								<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/face2.png" alt="face" class="agent__img">
+								<img src="img/face2.png" alt="face" class="agent__img">
 							</div>
 							<div class="agent__wrap">
 								<h4 class="agent__title">
@@ -134,7 +144,7 @@ get_header();?>
 						</div>
 						<div class="agent agent_three">
 							<div>
-								<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/face3.png" alt="face" class="agent__img">
+								<img src="img/face3.png" alt="face" class="agent__img">
 							</div>
 							<div class="agent__wrap">
 								<h4 class="agent__title">
@@ -162,7 +172,7 @@ get_header();?>
 					<div class="card card_one">
 						<div class="card__wrap card__wrap-one card__wrap_margin-one">
 							<div class="card__img_wrap">
-								<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/dodo-pizza.png" alt="dodo-pizza" class="card__img">
+								<img src="img/dodo-pizza.png" alt="dodo-pizza" class="card__img">
 							</div>
 							<span class="card__span">
 								Работаем под NDA
@@ -174,7 +184,7 @@ get_header();?>
 						<div class="card__wrap card__wrap_two">
 							<div class="card__wrap_wrap">
 								<div>
-									<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/face-mini1.png" alt="face" class="card__img-mini">
+									<img src="img/face-mini1.png" alt="face" class="card__img-mini">
 								</div>
 								<div class="card__inner">
 									<h6 class="card__title">
@@ -195,7 +205,7 @@ get_header();?>
 					<div class="card">
 						<div class="card__wrap card__wrap-one">
 							<div class="card__img_wrap">
-								<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/tinkoff.png" alt="dodo-pizza" class="card__img">
+								<img src="img/tinkoff.png" alt="dodo-pizza" class="card__img">
 							</div>
 							<span class="card__span">
 								Работали под NDA
@@ -207,7 +217,7 @@ get_header();?>
 						<div class="card__wrap card__wrap_two">
 							<div class="card__wrap_wrap">
 								<div>
-									<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/face-mini2.png" alt="face" class="card__img-mini">
+									<img src="img/face-mini2.png" alt="face" class="card__img-mini">
 								</div>
 								<div class="card__inner">
 									<h6 class="card__title">
@@ -228,7 +238,7 @@ get_header();?>
 					<div class="card">
 						<div class="card__wrap card__wrap-one">
 							<div class="card__img_wrap">
-								<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/megasport.png" alt="dodo-pizza" class="card__img">
+								<img src="img/megasport.png" alt="dodo-pizza" class="card__img">
 							</div>
 							<span class="card__span">
 								+30.000 подписчиков<br>
@@ -241,7 +251,7 @@ get_header();?>
 						<div class="card__wrap card__wrap_two">
 							<div class="card__wrap_wrap">
 								<div>
-									<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/face-mini3.png" alt="face" class="card__img-mini">
+									<img src="img/face-mini3.png" alt="face" class="card__img-mini">
 								</div>
 								<div class="card__inner">
 									<h6 class="card__title">
@@ -262,7 +272,7 @@ get_header();?>
 					<div class="card ">
 						<div class="card__wrap card__wrap-one">
 							<div class="card__img_wrap">
-								<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/pizza-pizza.png" alt="dodo-pizza" class="card__img">
+								<img src="img/pizza-pizza.png" alt="dodo-pizza" class="card__img">
 							</div>
 							<span class="card__span">
 								+18.000 подписчиков<br>
@@ -275,7 +285,7 @@ get_header();?>
 						<div class="card__wrap card__wrap_two">
 							<div class="card__wrap_wrap">
 								<div>
-									<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/face-mini4.png" alt="face" class="card__img-mini">
+									<img src="img/face-mini4.png" alt="face" class="card__img-mini">
 								</div>
 								<div class="card__inner">
 									<h6 class="card__title">
@@ -425,17 +435,17 @@ get_header();?>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4">
 					<div class="job job_one">
-						<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/job1.jpg" alt="analysis" class="job__img">
+						<img src="img/job1.jpg" alt="analysis" class="job__img">
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-4">
 					<div class="job job_two">
-						<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/job2.jpg" alt="customers" class="job__img">
+						<img src="img/job2.jpg" alt="customers" class="job__img">
 					</div>
 				</div>
 				<div class="col-12 col-sm-6 m-sm-auto col-lg-4">
 					<div class="job job_three">
-						<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/job3.jpg" alt="creatives" class="job__img">
+						<img src="img/job3.jpg" alt="creatives" class="job__img">
 					</div>
 				</div>
 				<div class="col-12">
@@ -491,8 +501,7 @@ get_header();?>
 			</div>
 		</div>
 	</section>
-	<?php wp_footer(); ?>
-	<!-- <footer class="footer" id="footer">
+	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -523,7 +532,7 @@ get_header();?>
 			</div>
 		</div>
 	</footer>
-	Модальные окна 
+	<!-- Модальные окна  -->
 		<div style="display: none;">
 		    <div class="box-modal connection animated" id="exampleModal">
 				<div class="contact">
@@ -537,4 +546,9 @@ get_header();?>
 					</form>
 				</div>
 		    </div>
-		</div> -->
+		</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
