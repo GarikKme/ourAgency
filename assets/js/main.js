@@ -18,7 +18,7 @@ $ (function () {
     });
 
     // плавное перемещение страницы к нужному блоку
-    $("a.go").click(function (e) {
+    $(".menu__list li a").click(function (e) {
         e.preventDefault();
         elementClick = $(this).attr("href");
         destination = $(elementClick).offset().top;

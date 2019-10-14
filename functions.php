@@ -130,9 +130,10 @@ function ouragency_scripts() {
 	wp_enqueue_style( 'ouragency-media.css', get_template_directory_uri().'/assets/css/media.css' );
 
 
-	wp_enqueue_script('jquery-3.3.1.min.js', get_template_directory_uri() . '/assets/jquery-3.3.1.min.js');
+	wp_enqueue_script( 'ouragency-jquery-3.3.1.min.js', get_template_directory_uri() . '/assets/js/jquery-3.3.1.min.js', array(), '1.0', true );
 	wp_enqueue_script( 'ouragency-jquery.arcticmodal-0.3.min.js', get_template_directory_uri() . '/assets/js/jquery.arcticmodal-0.3.min.js', array(), '1.0', true );
 	wp_enqueue_script( 'ouragency-main.js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true );
+	
 
 
 

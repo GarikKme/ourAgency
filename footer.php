@@ -21,9 +21,11 @@
 							Оставьте заявку и наш менеджер перезвонит вам в течении 60 минут
 						</p>
 						<form action="" class="form">
-							<input type="name" name="name"  placeholder="Ваше имя" class="form__input" required>
+							<!-- <input type="name" name="name"  placeholder="Ваше имя" class="form__input" required>
 							<input type="tel" name="tel" placeholder="Номер телефона" class="form__input" required>
-							<button type="" class="form__btn btn">Оставить заявку</button>
+							<button type="" class="form__btn btn">Оставить заявку</button> -->
+							<?php echo do_shortcode('[contact-form-7 id="20" title="Форма в footer"]')?>
+							
 						</form>
 						<div class="footer__wrap footer__wrap_two">	
 						</div>
@@ -43,9 +45,10 @@
 						Оставьте заявку и наш менеджер перезвонит вам в течении 60 минут
 					</p>
 					<form action="" class="form">
-						<input type="name" name="name"  placeholder="Ваше имя" class="form__input" required>
+						<!-- <input type="name" name="name"  placeholder="Ваше имя" class="form__input" required>
 						<input type="tel" name="tel" placeholder="Номер телефона" class="form__input" required>
-						<button type="" class="form__btn btn">Оставить заявку</button>
+						<button type="" class="form__btn btn">Оставить заявку</button> -->
+						<?php echo do_shortcode('[contact-form-7 id="20" title="Форма в footer"]')?>
 					</form>
 				</div>
 		    </div>
