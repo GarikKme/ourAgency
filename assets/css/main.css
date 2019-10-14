@@ -510,6 +510,12 @@ h1 {
 	width: 100%;
 	margin: 38px auto 0px;
 }
+
+.wpcf7-form-control-wrap>input{
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	color: #7e7e7e;
+}
 /* ----------- BOX-MODAL ----------*/
 .box-modal {
 	position: relative;
