@@ -150,6 +150,7 @@ h1 {
 }
 .menu__list li a {
 	color: #000;
+	font-size: 16px;
 }
 .menu__list li a:hover {
 	color: #fe0000;
@@ -198,15 +199,15 @@ h1 {
 .digit__text {
 	
 }
-.digit_one {
+/* .digit_1 {
 	margin-right: 40px;
 }
-.digit_two {
+.digit_2 {
 	margin-left: 80px;
 }
-.digit_three {
+.digit_3 {
 	margin-left: 115px;
-}
+} */
 .agent {
 	display: -webkit-flex;
 	display: -moz-flex;

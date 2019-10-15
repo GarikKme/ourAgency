@@ -9,16 +9,16 @@
 			<div class="row">
 				<div class="col-12">
 					<h3 class="services__title title-h3">
-						Хотите работать <span>с нами?</span>
+						 <?php the_field('7_экран_заголовок_черным'); ?><span> <?php the_field('7_экран_заголовок_красным'); ?></span>
 					</h3>
 					<p class="contact__text contact__text_one">
-						Оставьте заявку и наш менеджер перезвонит вам<br> в течении 60 минут
+						<?php the_field('7_экран_текст_подзаголовком'); ?>
 					</p>
 				</div>
 				<div class="col-12 col-sm-10 col-lg-8 col-xl-6 m-auto">
 					<div class="contact">
 						<p class="contact__text  contact__text_two">
-							Оставьте заявку и наш менеджер перезвонит вам в течении 60 минут
+							<?php the_field('7_экран_заголовок_формы'); ?>
 						</p>
 						<form action="" class="form">
 							<?php echo do_shortcode('[contact-form-7 id="20" title="Форма в footer"]')?>

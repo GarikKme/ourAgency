@@ -126,6 +126,7 @@ function ouragency_scripts() {
 	wp_enqueue_style( 'ouragency-bootstrap.min.css', get_template_directory_uri().'/assets/css/bootstrap.min.css' );
 	wp_enqueue_style( 'ouragency-hover.css', get_template_directory_uri().'/assets/css/hover.css' );
 	wp_enqueue_style( 'ouragency-jquery.arcticmodal-0.3.css', get_template_directory_uri().'/assets/css/jquery.arcticmodal-0.3.css' );
+	wp_enqueue_style( 'ouragency-fonts','https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,700i&display=swap&subset=cyrillic' );
 	wp_enqueue_style( 'ouragency-main.css', get_template_directory_uri().'/assets/css/main.css' );
 	wp_enqueue_style( 'ouragency-media.css', get_template_directory_uri().'/assets/css/media.css' );
 
